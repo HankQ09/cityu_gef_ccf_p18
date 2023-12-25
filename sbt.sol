@@ -39,5 +39,7 @@ contract MyToken is ERC721, Ownable, EIP712, ERC721Votes {
          // when token transfer is attempted, prevents the token from being transferred
         super._beforeTokenTransfer(from, to, tokenId);
     }
-
+    // Attribution: https://docs.chainstack.com/docs/gnosis-tutorial-simple-soulbound-token-with-remix-and-openzeppelin
+    // Attribution: https://blog.tally.xyz/how-to-create-a-soulbound-governance-token-in-5-minutes-or-less-4151d2164b9d    
+    // Attribution: https://www.quicknode.com/guides/ethereum-development/smart-contracts/how-to-create-a-soulbound-token#creating-the-soulbound-token
 }
